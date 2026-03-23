@@ -26,14 +26,23 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
+    <section class="hero" id="home">
+        <!-- Background Slider Images -->
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1416879598056-621aa081e649?auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content full-width">
             <div class="hero-badge">🌿 Expert Plant Care Service</div>
             <h1>We care for your plants,<br><span>so you don't have to.</span></h1>
             <p>Your personal plant caretaker for busy urban lifestyles. Professional maintenance, right at your doorstep.</p>
             <div class="hero-buttons">
                 <a href="#plans" class="btn-primary">Choose a Plan <i class="ph ph-arrow-right"></i></a>
-                <a href="#services" class="btn-outline">Explore Services</a>
+                <a href="#services" class="btn-outline light">Explore Services</a>
             </div>
             
             <div class="stats-row">
@@ -47,16 +56,6 @@
                     <p>Plant Monitoring</p>
                 </div>
             </div>
-        </div>
-        <div class="hero-image-wrapper">
-            <div class="floating-card">
-                <div class="card-icon"><i class="ph-fill ph-drop"></i></div>
-                <div class="card-text">
-                    <h4>Next watering</h4>
-                    <p>Tomorrow, 9:00 AM</p>
-                </div>
-            </div>
-            <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?auto=format&fit=crop&w=800&q=80" alt="Premium indoor gardening and plant care" class="hero-image">
         </div>
     </section>
 
@@ -193,5 +192,21 @@
             </div>
         </div>
     </footer>
+    </footer>
+    
+    <script>
+        // Automatic Hero Slider
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
