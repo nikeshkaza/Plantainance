@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantainance - Your Personal Plant Caretaker</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="ph-fill ph-plant"></i>
+            Plantainance
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#contact" class="btn-primary-sm">Book Visit</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🌿 Expert Plant Care Service</div>
+            <h1>We care for your plants,<br><span>so you don't have to.</span></h1>
+            <p>Your personal plant caretaker for busy urban lifestyles. Professional maintenance, right at your doorstep.</p>
+            <div class="hero-buttons">
+                <a href="#plans" class="btn-primary">Choose a Plan <i class="ph ph-arrow-right"></i></a>
+                <a href="#services" class="btn-outline">Explore Services</a>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Health Guarantee</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Plant Monitoring</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="floating-card">
+                <div class="card-icon"><i class="ph-fill ph-drop"></i></div>
+                <div class="card-text">
+                    <h4>Next watering</h4>
+                    <p>Tomorrow, 9:00 AM</p>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1497250681558-81aaedca42bc?auto=format&fit=crop&w=800&q=80" alt="Healthy indoor plants in a modern living room" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our Premium Services</h2>
+            <p>Comprehensive care for every leaf and root in your home.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="ph ph-drop"></i></div>
+                <h3>Watering & Hydration</h3>
+                <p>Customized watering schedules based on plant type, season, and indoor environment.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="ph ph-scissors"></i></div>
+                <h3>Pruning & Trimming</h3>
+                <p>Expert shaping and removal of dead foliage to encourage new, healthy growth.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="ph ph-bug"></i></div>
+                <h3>Pest Treatment</h3>
+                <p>Organic, pet-safe solutions to identify, treat, and prevent common plant pests.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="ph ph-flask"></i></div>
+                <h3>Soil Health Check</h3>
+                <p>Nutrient testing and fertilization to ensure your plants' roots are thriving.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="section-header">
+            <h2>Pick Your Care Plan</h2>
+            <p>Flexible subscriptions designed for collections of all sizes.</p>
+        </div>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h3>Basic</h3>
+                    <div class="price"><span>₹</span>499<span>/mo</span></div>
+                    <p>Perfect for small collections.</p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> 1 visit per week</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Watering & basic cleanup</li>
+                    <li class="disabled"><i class="ph-fill ph-x-circle"></i> Pest treatment</li>
+                </ul>
+                <a href="#contact" class="btn-plan">Select Basic</a>
+            </div>
+
+            <div class="plan-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Standard</h3>
+                    <div class="price"><span>₹</span>899<span>/mo</span></div>
+                    <p>The ideal balance for urban jungles.</p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> 2 visits per week</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Comprehensive watering</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Proactive pest care</li>
+                </ul>
+                <a href="#contact" class="btn-primary plan-btn">Select Standard</a>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h3>Premium</h3>
+                    <div class="price"><span>₹</span>1499<span>/mo</span></div>
+                    <p>Absolute VIP treatment.</p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> Alternate day visits</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Complete soil & nutrient care</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Monthly health reports</li>
+                </ul>
+                <a href="#contact" class="btn-plan">Select Premium</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's revive your green space.</h2>
+                <div class="contact-image">
+                    <img src="https://images.unsplash.com/photo-1545241047-6083a36ee15f?auto=format&fit=crop&w=600&q=80" alt="Plant care expert at work">
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="booking-form" action="#" onsubmit="event.preventDefault(); alert('MVP prototype form submitted.');">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Plan</label>
+                            <select required>
+                                <option value="basic">Basic (₹499/mo)</option>
+                                <option value="standard">Standard (₹899/mo)</option>
+                                <option value="premium">Premium (₹1499/mo)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">Book Your First Visit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo"><i class="ph-fill ph-plant"></i> Plantainance</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
